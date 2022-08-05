@@ -1,27 +1,42 @@
-Problem 1:
-Given an array of size N containing only Os, 1s, and 2s; sort the array in ascending order.
+1.An element in a sorted array can be found in O(log n) time via binary search.
+But suppose we rotate an ascending order sorted array at some pivot unknown to you beforehand. 
+So for instance, 1 2 3 4 5 might become 3 4 5 1 2.
 
-Example 1:
+Devise a way to find an element in the rotated array in O(log n)time.
 
-Input:N=5
+Example:
 
-arr[]={0 2 1 2 0};
+Input: arr []= (5, 6, 7, 8, 9, 10, 1, 2, 3); 
+key = 3
 
-Output:0 0 1 2 2
+Output: Found at index 8
 
-Explanation: Os 1s and 2s are segregated into ascending order.
+Input: arr[]= (5, 6, 7, 8, 9, 10, 1, 2, 3);
+key = 30 
 
-Problem 2:
-You are given an unsorted array with both
-positive and negative elements. You have to find the smallest positive number missing from the array.
-Input: (2, 3, 7, 6, 8, -1, -10, 15)
+Output: Not found
 
-Output: 1
+Input: arr[] (30, 40, 50, 10, 20); 
+key= 10 
 
-Input: (2, 3, -7, 6, 8, 1, -10, 15}
+Output: Found at index 3
 
-Output: 4
 
-Input: (1, 1, 0, -1, -2} 
+2.Given an n x n matrix and a number x, find the position of x in the matrix if it is present in it. Otherwise, print “Not Found”.
+In the given matrix, every row and column is sorted in increasing order.
+The designed algorithm should have linear time complexity (Big-O complexity O(N)).
 
-Output: 2
+Input: mat[4][4] = 
+{{10, 20, 30, 40},
+
+{15, 25, 35, 45},
+
+{27, 29, 37, 48},
+
+{32, 33, 39, 50}};
+
+x = 29
+
+Output: Found at (2, 1)
+
+Explanation: Element at (2,1) is 29
