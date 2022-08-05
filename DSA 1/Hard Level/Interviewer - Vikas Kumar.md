@@ -1,4 +1,4 @@
-1.Find the inverse of an array, atray,
+1.Find the inverse of an array.
 
 2.Selection sort,
 
