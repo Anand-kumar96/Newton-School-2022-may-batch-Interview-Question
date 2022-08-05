@@ -1,11 +1,12 @@
 Problem 1:
 Given an array of size N containing only Os, 1s, and 2s; sort the array in ascending order.
+
 Example 1:
+
 Input:
 N=5
 arr[]={0 2 1 2 0};
-Output:
-00122
+Output:0 0 1 2 2
 Explanation: Os 1s and 2s are segregated into ascending order.
 
 Problem 2:
